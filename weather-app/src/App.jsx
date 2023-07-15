@@ -8,7 +8,7 @@ function App() {
 		<>
 			<Routes>
 				<Route path="/" element={<CityInput />}></Route>
-				<Route path="/:city" element={<CityWeather />}></Route>
+				<Route path="/:cityName" element={<CityWeather />}></Route>
 			</Routes>
 		</>
 	);

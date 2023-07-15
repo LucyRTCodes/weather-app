@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useContext } from "react";
+import { CityContext } from "../contexts/City";
 
 function CityInput() {
-	const { city, setCity } = useState();
+	const { city, setCity } = useContext(CityContext);
 	const [input, setInput] = useState("");
 	const navigate = useNavigate();
 

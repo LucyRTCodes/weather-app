@@ -5,8 +5,8 @@ export const TempUnitsContext = createContext();
 export const TempUnitsProvider = ({ children }) => {
 	const [tempUnits, setTempUnits] = useState("");
 	return (
-		<CityContext.Provider value={{ tempUnits, setTempUnits }}>
+		<TempUnitsContext.Provider value={{ tempUnits, setTempUnits }}>
 			{children}
-		</CityContext.Provider>
+		</TempUnitsContext.Provider>
 	);
 };
