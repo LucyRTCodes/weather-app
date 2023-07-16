@@ -18,7 +18,7 @@ function Home() {
 		navigate(`/${city}`);
 	}, [city]);
 	return (
-		<>
+		<div className="home">
 			<h1>City Weather</h1>
 			<form onSubmit={handleSubmit}>
 				<div>
@@ -39,7 +39,7 @@ function Home() {
 					</button>
 				</div>
 			</form>
-		</>
+		</div>
 	);
 }
 
