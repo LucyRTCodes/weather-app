@@ -1,13 +1,15 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import CityInput from "./components/CityInput";
+import Home from "./components/Home";
 import CityWeather from "./components/CityWeather";
+import Nav from "./components/Nav";
 
 function App() {
 	return (
 		<>
+			<Nav />
 			<Routes>
-				<Route path="/" element={<CityInput />}></Route>
+				<Route path="/" element={<Home />}></Route>
 				<Route path="/:cityName" element={<CityWeather />}></Route>
 			</Routes>
 		</>

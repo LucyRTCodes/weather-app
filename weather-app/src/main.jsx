@@ -8,10 +8,10 @@ import { CityProvider } from "./contexts/City.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<BrowserRouter>
-		{/* <TempUnitsProvider> */}
-		<CityProvider>
-			<App />
-		</CityProvider>
-		{/* </TempUnitsProvider> */}
+		<TempUnitsProvider>
+			<CityProvider>
+				<App />
+			</CityProvider>
+		</TempUnitsProvider>
 	</BrowserRouter>
 );
